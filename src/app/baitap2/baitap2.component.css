@@ -1,0 +1,12 @@
+.student{
+    margin-left: 280px;
+    margin-top: 50px;
+}
+table td, th {
+    border: 1px solid #bbb;
+}
+table{
+    width: 800px;
+    height: 200px;
+    margin-left: 280px;
+}

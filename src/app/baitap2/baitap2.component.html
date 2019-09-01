@@ -1,0 +1,35 @@
+<h3 class="student"><b>STUDENT</b></h3>
+<table class="table table-bordered">
+  <thead>
+    <tr style="text-align: center">
+      <th scope="col">Hình</th>
+      <th scope="col">Họ và Tên </th>
+      <th scope="col">Ngày sinh</th>
+      <th scope="col">Giới tính</th>
+      <th scope="col">Điểm</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center;">
+    <tr>
+      <td><img src="{{students[0].image}}" width="80px" height="80px" alt="students[].fullname"></td>
+      <td>{{students[0].fullname}}</td>
+      <td>{{students[0].birthday}}</td>
+      <td>{{students[0].gender}}</td>
+      <td>{{students[0].mark}}</td>
+    </tr>
+    <tr>
+      <td><img src="{{students[1].image}}" width="80px" height="auto"></td>
+      <td>{{students[1].fullname}}</td>
+      <td>{{students[1].birthday}}</td>
+      <td>{{students[1].gender}}</td>
+      <td>{{students[1].mark}}</td>
+    </tr>
+    <tr>
+      <td><img src="{{students[2].image}}" width="80px" height="auto"></td>
+      <td>{{students[2].fullname}}</td>
+      <td>{{students[2].birthday}}</td>
+      <td>{{students[2].gender}}</td>
+      <td>{{students[2].mark}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+.student{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+table td, th {
+    border: 2px solid #ddd;
+}
+table{
+    width: 1000px;
+    height: 400px;
+    margin-left: 200px;
+    border: 2px solid #ddd;
+}
+.total{
+    margin-left: 200px;
+}
+th{
+    text-align: center;
+}
+.button{
+    text-align: center
+}

@@ -1,0 +1,99 @@
+<div class="row">
+        <div class="col-3" style="background-color: hsl(263, 70%, 83%); height: 600px;">
+          <i class="fas fa-bars" style="font-size: 40px"></i>
+          <div class="img">
+            <img src="../assets/image/bootstrap.jpg" alt="" width="150px" height="auto">
+          </div>
+              <b style="margin-left:115px">Bootstrap</b>
+          <div class="button">
+              <i class="fas fa-home" style="margin-left:10px"></i>
+            <button type="button" class="btn">Home</button><br>
+              <i class="fas fa-user-tag" style="margin-left:10px"></i>
+            <button type="button" class="btn">Employees</button><br>
+              <i class="fas fa-umbrella" style="margin-left:10px"></i>
+            <button type="button" class="btn">Projects</button><br>
+            <i class="fas fa-skull-crossbones" style="margin-left:10px"></i>
+            <button type="button" class="btn">Skill</button><br>
+              <i class="fab fa-sketch" style="margin-left:10px"></i>
+            <button type="button" class="btn">Interns</button><br>  
+              <i class="fab fa-app-store-ios" style="margin-left:10px"></i>
+            <button type="button" class="btn">Topic</button><br>
+              <i class="fab fa-android" style="margin-left:10px"></i>
+            <button type="button" class="btn">Courses</button><br>
+              <i class="fas fa-handshake" style="margin-left:10px"></i>
+            <button type="button" class="btn">Topic Course</button><br>
+              <i class="fas fa-thumbs-up" style="margin-left:10px"></i>
+            <button type="button" class="btn">Classes</button>
+          </div>
+        </div>
+        <div class="col-9" style="background-color:#fff;">
+          <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+                  <form class="form-inline" action="/action_page.php">
+                      <b>Show</b>
+                      <div style="margin-left: 15px">
+                          <tr>
+                                  <td><form>
+                                      <select name="cars" class="custom-select">
+                                        <option selected>Choose</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                      </select>
+                                    </form></td>
+                                </tr>
+                      </div>
+                      <div style="margin-right: 10px">
+                              <button type="button" class="btn btn-primary" style="margin-left: 300px">Excel</button>
+                      </div>
+                      <button type="button" class="btn btn-primary" style="margin-right: 30px">PDF</button>
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button type="button" class="btn btn-primary">+ Add Employee</button>
+                  </form>
+                </nav>  
+                <table class="table table-bordered" style="width:98%">
+                  <thead>
+                    <tr class="th">
+                      <th scope="col">ID</th>
+                      <th scope="col">First Name </th>
+                      <th scope="col"> Last Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody class="td">
+                          <tr *ngFor="let exersice of Exercises">
+                                  <td>{{exersice.id}}</td>
+                                  <td>{{exersice.firstname}}</td>
+                                  <td>{{exersice.lastname}}</td>
+                                  <td>{{exersice.email}}</td>
+                                  <td>
+                                    <i class="fas fa-exclamation" style="margin-left: 5px">{{exersice.Action}}</i>
+                                    <i class="fas fa-pencil-alt" style="margin-left: 5px">{{exersice.Action}}</i>
+                                    <i class="fas fa-trash-alt" style="margin-left: 5px">{{exersice.Action}}</i>
+                                  </td>
+                                  
+                          </tr>
+                  </tbody>
+                  
+                </table>
+  </div>   
+</div>
+
+

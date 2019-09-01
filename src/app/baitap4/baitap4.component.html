@@ -1,0 +1,81 @@
+<div class="container">
+<h3 style="margin-left: 150px"><b>LEAF RAKE</b></h3>
+        <div class="card">
+          <div class="card-header"><b>Leaf Rake</b></div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3">
+
+                <p><b>Name:</b></p>
+                <p><b>Code:</b></p>
+                <p><b>Description:</b></p><br>
+                <p><b>Availability:</b></p>
+                <p><b>Price:</b></p>
+                <p><b>5 Star Rating:</b></p>
+              
+              </div>
+              <div class="col-3">
+                <p>Leaf Rake</p>
+                <p>GDN-0011</p>
+                <p>Leaf Rake with 4B-inch wooden handle</p>
+                <p>March 19, 2016</p>
+                <p>$19.95</p>
+                <p>3.2</p>
+              </div>
+              <div class="col-6"><img src="../assets/image/leaf.jpg" alt="" width="300" height="200"></div>
+            </div>
+          </div> 
+          
+          <div class="card-footer"><b><i class="fas fa-arrow-left">Back</i></b></div>
+        </div>
+        
+</div>
+
+
+
+
+  <!---->
+  <h3 class="title"><b>PRODUCT LIST VIEW</b></h3>
+
+<div class="card border-primary mb-3 mt-3">
+        <div class="card-header bg-primary" style="color:white">List Product</div>
+            <div class="card-body">
+                <form action="" class="form-inline">
+                    Filter by: <input type="text" placeholder="Search" ng-model="SearchText" style="margin-left:8px"/>
+                    
+                   </form>
+            </div>
+            <table class="table m-6" id="SearchTextResults">
+                <thead class="text-primary table-boder">
+                   <tr> 
+                     <th>
+                        <button type="button" class="btn btn-primary">Hiện Image</button>
+                     </th>
+                    <th>Product</th>
+                    <th>Code</th>
+                    <th>Available</th>
+                    <th>Price</th>
+                    <th>5 Star Rating</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of ListProducts">
+                    <td><img src="{{product.id}}" alt="" width="50px" height="50px" ></td>
+                    <td>{{product.Product}}</td>
+                    <td>{{product.Code}}</td>
+                    <td>{{product.Available}}</td>
+                    <td>{{product.Price}}</td>
+                    <td>
+                        <i class="fa fa-star" aria-hidden="true">{{product.StarRating}}</i>
+                        <i class="fa fa-star" aria-hidden="true">{{product.StarRating}}</i>
+                        <i class="fa fa-star" aria-hidden="true">{{product.StarRating}}</i>
+                        <i class="fa fa-star" aria-hidden="true">{{product.StarRating}}</i>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+            </table>
+           
+    </div>
+    
+            
